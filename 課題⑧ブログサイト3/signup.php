@@ -7,9 +7,9 @@
     exit();
   }
 
-  $dsn = "mysql:dbname=task_six_blogs;host=localhost";
-  $user = "root";
-  $password = "tsuka1793";
+  $dsn = "mysql:dbname=t1thivzsrdk5y4wj;host=nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+  $user = "xzwbwzes9yv8yjbb";
+  $password = "vkmg1w9wizgqg3pn";
 
   try {
     $pdo = new PDO($dsn, $user, $password);  
