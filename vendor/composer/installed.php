@@ -3,7 +3,7 @@
         'name' => 'tsukasakiyofuji/sample',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '92b6c18cd5e5c2f675fc3174f0039babf15da618',
+        'reference' => '2b19d17d5d3c003bdd5b916600d56876a87a197a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'tsukasakiyofuji/sample' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '92b6c18cd5e5c2f675fc3174f0039babf15da618',
+            'reference' => '2b19d17d5d3c003bdd5b916600d56876a87a197a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

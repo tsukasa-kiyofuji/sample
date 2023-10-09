@@ -1,7 +1,7 @@
 <?php 
   session_start();
 
-  require 'vendor/autoload.php';
+  require ('vendor/autoload.php');
 
 // リダイレクト：ログインしていない場合
   if (!isset($_SESSION["login"])) {
