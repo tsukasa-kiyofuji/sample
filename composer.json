@@ -1,7 +1,8 @@
 {
     "name": "tsukasakiyofuji/sample",
-    "description": "tsukasa",
-    "type": "project",
+    "description": "test",
+    "type": "library",
+    "license": "MIT License\u001b[C\u001b[D",
     "autoload": {
         "psr-4": {
             "Tsukasakiyofuji\\Sample\\": "src/"
@@ -12,5 +13,6 @@
             "name": "tsukasakiyofuji"
         }
     ],
+    "minimum-stability": "stable",
     "require": {}
 }
