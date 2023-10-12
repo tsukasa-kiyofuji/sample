@@ -14,10 +14,11 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {"monolog/monolog": "^3.0"},
     "config": {
      "platform": {
-         "php": "8.2.11" 
+         "php": "8.2.11", 
+         "composer": "2.6.4"
      }
  }
 }
