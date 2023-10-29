@@ -19,7 +19,12 @@
   }
 ?>
 
-<?php echo phpversion(); ?>
+<?php 
+  echo phpversion();
+
+  $a = "show variables like 'hostname'";
+  echo $a;
+?>
 
 <!DOCTYPE html>
 <html>
