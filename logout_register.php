@@ -9,21 +9,16 @@
     exit();
   }
 
-$host = getenv("JAWSDB_HOST");
-$username = getenv("JAWSDB_USER");
-$password = getenv("JAWSDB_PASSWORD");
-$database = getenv("JAWSDB_DATABASE");
-$port = getenv("JAWSDB_PORT");
+  $dsn = "mysql:dbname=t1thivzsrdk5y4wj;host=nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+  $user = "xzwbwzes9yv8yjbb";
+  $password = "vkmg1w9wizgqg3pn";
 
-try {
-    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$database", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    echo "データベースに接続しました";
-
-  } catch (PDOException $e) {
-    die("データベースエラー: " . $e->getMessage());
-}
+  try {
+    $pdo = new PDO($dsn, $user, $password);  
+  } catch (Exception $e) {
+    print("Connection failed:".$e->getMessage());
+    exit();
+  }
 
   $pdo = null;
 
