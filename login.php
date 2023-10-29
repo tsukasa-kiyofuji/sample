@@ -22,8 +22,7 @@
 <?php 
   echo phpversion();
 
-  $a = "show variables like 'hostname'";
-  echo $a;
+  echo "show variables like 'hostname'";
 ?>
 
 <!DOCTYPE html>
