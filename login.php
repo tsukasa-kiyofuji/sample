@@ -7,11 +7,11 @@
     exit();
   }
 
-$host = getenv("nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com ");
-$username = getenv("xzwbwzes9yv8yjbb");
-$password = getenv("vkmg1w9wizgqg3pn");
-$database = getenv("t1thivzsrdk5y4wj");
-$port = getenv("3306");
+$host = getenv("JAWSDB_HOST");
+$username = getenv("JAWSDB_USER");
+$password = getenv("JAWSDB_PASSWORD");
+$database = getenv("JAWSDB_DATABASE");
+$port = getenv("JAWSDB_PORT");
 
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$database", $username, $password);
