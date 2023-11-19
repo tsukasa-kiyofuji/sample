@@ -1,7 +1,5 @@
 <?php 
 
-  SELECT user, host FROM mysql.user;
-
   session_start();
 
 // リダイレクト：ログイン済の場合
