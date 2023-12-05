@@ -8,10 +8,12 @@
     exit();
   }
 
-  $url = parse_url(getenv("mysql://xzwbwzes9yv8yjbb:vkmg1w9wizgqg3pn@nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/t1thivzsrdk5y4wj"));
+  $dsn = "mysql:dbname=t1thivzsrdk5y4wj;host=nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+  $user = "xzwbwzes9yv8yjbb";
+  $password = "vkmg1w9wizgqg3pn";
 
   try {
-    $pdo = new PDO("mysql:host=" . $url["host"] . ";dbname=" . substr($url["path"], 1), $url["user"], $url["pass"]);  
+    $pdo = new PDO($dsn, $user, $password);  
   } catch (Exception $e) {
     print("Connection failed:".$e->getMessage());
     exit();
