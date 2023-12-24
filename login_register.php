@@ -12,6 +12,8 @@
     exit();
   }
 
+  ini_set('display_errors', "On");
+
   $email = $_POST['email'];
   $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
   

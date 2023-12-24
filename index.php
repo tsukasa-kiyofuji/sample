@@ -27,6 +27,8 @@
   $stmt_1 = $pdo->prepare($sql_1);
   $stmt_1->execute();
   $data_1 = $stmt_1->fetchAll(PDO::FETCH_ASSOC);
+
+  ini_set('display_errors', "On");
 ?>
 
 <!DOCTYPE html>
