@@ -18,6 +18,8 @@
     print("Connection failed:".$e->getMessage());
     exit();
   }
+
+  ini_set('display_errors', "On");
 ?>
 
 
