@@ -9,13 +9,13 @@
     $pdo = new PDO($dsn, $user, $password);
 
   $createTableBlogs = "CREATE TABLE IF NOT EXISTS blogs(
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT,
     title VARCHAR(255) NOT NULL,
     description VARCHAR(255) NULL
   )";
 
   $createTableUsers = "CREATE TABLE IF NOT EXISTS users(
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

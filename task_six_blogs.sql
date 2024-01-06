@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2023-12-24 03:39:13
+-- 生成日時: 2024-01-06 13:02:19
 -- サーバのバージョン： 10.4.27-MariaDB
 -- PHP のバージョン: 8.2.0
 
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- テーブルの構造 `blogs`
 --
 
-CREATE TABLE `blogs` (
+CREATE TABLE IF NOT EXISTS `blogs` (
   `id` int(255) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` varchar(255) DEFAULT NULL
@@ -51,7 +51,7 @@ INSERT INTO `blogs` (`id`, `title`, `description`) VALUES
 -- テーブルの構造 `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
