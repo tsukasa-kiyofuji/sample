@@ -1,12 +1,5 @@
 <?php 
-  $url = parse_url(getenv("mysql://xzwbwzes9yv8yjbb:vkmg1w9wizgqg3pn@nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/t1thivzsrdk5y4wj"));
-
-  try {
-    $pdo = new PDO("mysql:host=" . $url["host"] . ";dbname=" . substr($url["path"], 1), $url["user"], $url["pass"]);  
-  } catch (Exception $e) {
-    print("Connection failed:".$e->getMessage());
-    exit();
-  }
+  require ('db.php');
 
 // フォーム入力値の取得
   $title = $_POST['title'];

@@ -1,14 +1,5 @@
 <?php 
-  $dsn = "mysql:dbname=t1thivzsrdk5y4wj;host=nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-  $user = "xzwbwzes9yv8yjbb";
-  $password = "vkmg1w9wizgqg3pn";
-
-  try {
-    $pdo = new PDO($dsn, $user, $password);  
-  } catch (Exception $e) {
-    print("Connection failed:".$e->getMessage());
-    exit();
-  }
+  require ('db.php');
 
   $search = $_GET['search'];
 // エラー反応(リダイレクト)1:$searchが空の場合
@@ -27,7 +18,6 @@
   if($count === 0){
     echo "検索ワードを含むブログは存在しません。";
   }
-
 ?>
 
 
