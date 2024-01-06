@@ -16,19 +16,39 @@
   $user = "xzwbwzes9yv8yjbb";
   $password = "vkmg1w9wizgqg3pn";
 
+
   try {
-    $pdo = new PDO($dsn, $user, $password);  
+    $pdo = new PDO($dsn, $user, $password);
+
+  $createTableBlogs = "CREATE TABLE blogs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NULL,
+  )";
+
+  $createTableUsers = "CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  )";
+
+    $pdo->exec($createTableBlogs);
+    $pdo->exec($createTableUsers);
+
   } catch (Exception $e) {
     print("Connection failed:".$e->getMessage());
     exit();
   }
+
+  ini_set('display_errors', "On");
 
   $sql_1 = "select * from blogs" ;
   $stmt_1 = $pdo->prepare($sql_1);
   $stmt_1->execute();
   $data_1 = $stmt_1->fetchAll(PDO::FETCH_ASSOC);
 
-  ini_set('display_errors', "On");
 ?>
 
 <!DOCTYPE html>
