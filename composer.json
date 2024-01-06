@@ -1,0 +1,24 @@
+{
+    "name": "tsukasakiyofuji/sample",
+    "description": "test",
+    "type": "library",
+    "license": "MIT License\u001b[C\u001b[D",
+    "autoload": {
+        "psr-4": {
+            "Tsukasakiyofuji\\Sample\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tsukasakiyofuji"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {"monolog/monolog": "^3.0"},
+    "config": {
+     "platform": {
+         "php": "8.2.11", 
+         "composer": "2.6.4"
+     }
+ }
+}
